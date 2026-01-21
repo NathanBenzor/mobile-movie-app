@@ -1,12 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const profile = () => {
+export default function Profile() {
   return (
     <View>
       <Text>profile</Text>
     </View>
   );
-};
-
-export default profile;
+}
