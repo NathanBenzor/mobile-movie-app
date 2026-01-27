@@ -13,6 +13,7 @@ import {
   Text,
   View,
 } from "react-native";
+import "react-native-url-polyfill/auto";
 
 export default function Index() {
   const router = useRouter();
@@ -53,6 +54,10 @@ export default function Index() {
                 router.push("/search");
               }}
               placeholder="Search movies, TV shows..."
+              value={""}
+              onChangeText={function (text: string): void {
+                throw new Error("Function not implemented.");
+              }}
             />
             <>
               <Text className="text-white text-lg font-bold mt-5 mb-3">
